@@ -4,3 +4,9 @@ version = "1.0.0"
 edition = "2024"
 
 [dependencies]
+proc_macros = { path = "./proc_macros" }
+
+[workspace]
+members = [
+    "proc_macros",
+]
