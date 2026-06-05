@@ -3,8 +3,12 @@ name = "tools"
 version = "1.2.0"
 edition = "2024"
 
+[features]
+serde = ["dep:serde"]
+
 [dependencies]
 proc_macros = { path = "./proc_macros" }
+serde = { version = "1.0.159", features = ["derive"], optional = true }
 
 [workspace]
 members = [
